@@ -1,0 +1,26 @@
+{
+  "name": "esbuild-init-config",
+  "version": "1.0.0",
+  "description": "🚀 ESBuild Testing Project 📦  Welcome to my exploration hub where I dive into ESBuild, an incredibly fast bundler for web applications. My aim is to investigate how ESBuild can enhance performance and efficiency in the project build and packaging process.",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --minify --sourcemap --outfile=public/bundle.js",
+    "build:dev": "node esbuild.dev.js",
+    "start": "node esbuild.config.js -w",
+    "open": "xdg-open public/index.html"
+  },
+  "author": "VictorCasta",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.19.2",
+    "esbuild-serve": "^1.0.1"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  },
+  "type": "module"
+}
